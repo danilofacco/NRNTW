@@ -2,19 +2,19 @@ import { Text, useSx, View, H1, P, Row, A } from 'dripsy'
 import React from 'react'
 import { TextLink } from 'solito/link'
 import { MotiLink } from 'solito/moti'
-import {useTailwind} from 'tailwind-rn';
+import tw from 'twrnc'
 export function HomeScreen() {
-  const tailwind = useTailwind();
   const sx = useSx()
-
   return (
-    <View
-    style={tailwind('pt-12 items-center bg-blue-500')}
-      sx={{ flex: 1, justifyContent: 'center', alignItems: 'center', p: 16 }}
-    >
+    <View  
+    style={tw`bg-blue-200 text-white flex flex-col gap-4 pt-20 h-full`} 
+    > 
+    
+ 
+      
       <H1 sx={{ fontWeight: '800' }}>Welcome to Solito.</H1>
       <View sx={{ maxWidth: 600 }}>
-        <P style={tailwind('pt-12 items-center bg-blue-500')} sx={{ textAlign: 'center' }}>
+        <P sx={{ textAlign: 'center' }}>
           Here is a basic starter to show you how you can navigate from one
           screen to another. This screen uses the same code on Next.js and React
           Native.
