@@ -1,0 +1,17 @@
+{
+  "expo": {
+    "name": "Teste-solito",
+    "slug": "teste-solito",
+    "version": "1.0.0",
+    "sdkVersion": "44.0.0",
+    "scheme": "solito-blank",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.solito.blank"
+    },
+    "description": ""
+  }
+}
