@@ -4,7 +4,7 @@ import { TextLink } from 'solito/link'
 import { MotiLink } from 'solito/moti'
 import tw from '../../../../node_modules/twrnc'
 import {FiveHundredPx} from '../../../../node_modules/@styled-icons/boxicons-logos/FiveHundredPx'
-import CrossImage from '../cross/CrossImage'
+import CrossImage from 'app/features/cross/crossimage'
 
 export function HomeScreen() {
   const sx = useSx()
