@@ -2,10 +2,8 @@ import { Text, useSx, View, H1, P, Row, A } from 'dripsy'
 import React from 'react'
 import { TextLink } from 'solito/link'
 import { MotiLink } from 'solito/moti'
-import tw from '../../../../node_modules/twrnc'
-import {FiveHundredPx} from '../../../../node_modules/@styled-icons/boxicons-logos/FiveHundredPx'
-import CrossImage from 'app/features/cross/crossimage'
-import { Image as NativeImage, Platform } from 'react-native';
+import tw from '_/tailwind'
+import CrossImage from 'app/features/cross/crossimage' 
 export function HomeScreen() {
   const sx = useSx()
   return (
