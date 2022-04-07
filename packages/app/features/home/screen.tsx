@@ -4,6 +4,7 @@ import { TextLink } from 'solito/link'
 import { MotiLink } from 'solito/moti'
 import tw from '../../../../node_modules/twrnc'
 import {FiveHundredPx} from '../../../../node_modules/@styled-icons/boxicons-logos/FiveHundredPx'
+import CrossImage from '../cross/CrossImage'
 
 export function HomeScreen() {
   const sx = useSx()
@@ -11,7 +12,7 @@ export function HomeScreen() {
     <View  
     style={tw`bg-blue-200 text-white flex flex-col gap-4 pt-20 h-full`} 
     >  
- <FiveHundredPx size={50}></FiveHundredPx> 
+ <CrossImage src="/vercel.svg" w={200} h={300} c="w-full"/> 
       
       <H1 sx={{ fontWeight: '800' }}>Welcome to Solito.</H1>
       <View sx={{ maxWidth: 600 }}>
