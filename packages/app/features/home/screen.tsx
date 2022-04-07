@@ -2,15 +2,16 @@ import { Text, useSx, View, H1, P, Row, A } from 'dripsy'
 import React from 'react'
 import { TextLink } from 'solito/link'
 import { MotiLink } from 'solito/moti'
-import tw from 'twrnc'
+import tw from '../../../../node_modules/twrnc'
+import {FiveHundredPx} from '../../../../node_modules/@styled-icons/boxicons-logos/FiveHundredPx'
+
 export function HomeScreen() {
   const sx = useSx()
   return (
     <View  
     style={tw`bg-blue-200 text-white flex flex-col gap-4 pt-20 h-full`} 
-    > 
-    
- 
+    >  
+ <FiveHundredPx size={50}></FiveHundredPx> 
       
       <H1 sx={{ fontWeight: '800' }}>Welcome to Solito.</H1>
       <View sx={{ maxWidth: 600 }}>

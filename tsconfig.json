@@ -4,7 +4,9 @@
     "strictNullChecks": true,
     "noUncheckedIndexedAccess": true,
     "paths": {
-      "app/*": ["./packages/app/*"]
+      "app/*": ["./packages/app/*"],
+      "@/*": ["./*"],
+      "_/*":["./node_modules/*"]
     }
   },
   "extends": "expo/tsconfig.base"
