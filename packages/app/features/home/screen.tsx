@@ -2,7 +2,7 @@ import { Text, useSx, View, H1, P, Row, A } from 'dripsy'
 import React from 'react'
 import { TextLink } from 'solito/link'
 import { MotiLink } from 'solito/moti'
-import tw from '_/tailwind'
+import tw from 'nm/tailwind'
 import CrossImage from 'app/features/cross/crossimage' 
 export function HomeScreen() {
   const sx = useSx()
