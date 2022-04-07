@@ -1,27 +1,27 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  webpack5: true,
+    reactStrictMode: true,
+    webpack5: true,
 }
 
 const { withExpo } = require('@expo/next-adapter')
 const withImages = require('next-images');
 const withPlugins = require('next-compose-plugins')
 const withTM = require('next-transpile-modules')([
-  'solito',
-  'dripsy',
-  '@dripsy/core',
-  'moti',
-  '@motify/core',
-  '@motify/components',
-  'app',
+    'solito',
+    'dripsy',
+    '@dripsy/core',
+    'moti',
+    '@motify/core',
+    '@motify/components',
+    'app',
 ])
 
 module.exports = withPlugins(
-  [withTM, [withExpo(
-    withImages({
-    projectRoot: __dirname,
-  }))
-  , { projectRoot: __dirname }]],
-  nextConfig
+    [withTM, [withExpo, { projectRoot: __dirname }]],
+    nextConfig, {
+        images: {
+            domains: ['assets.example.com'],
+        },
+    }
 )

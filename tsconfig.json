@@ -5,7 +5,7 @@
     "noUncheckedIndexedAccess": true,
     "paths": {
       "app/*": ["./packages/app/*"],     
-      "nd/*":["./packages/nd/*"]
+      "nm*":["./packages/nm/*"]
     }
   },
   "extends": "expo/tsconfig.base"
